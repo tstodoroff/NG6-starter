@@ -1,12 +1,9 @@
 import angular from 'angular';
-import Home from './home/home';
-import About from './about/about';
 
-let componentModule = angular.module('app.components', [
-  Home,
-  About
-])
+import mazeInput from './mazeInput/mazeInput';
+import mazeResolved from './mazeResolved.component';
 
-.name;
-
-export default componentModule;
+export default angular
+  .module('app', [])
+  .component('mazeInput', mazeInput)
+  .component('mazeResolved', mazeResolved);
